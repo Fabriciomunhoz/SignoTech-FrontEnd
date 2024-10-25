@@ -1,0 +1,155 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.enquetes-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.enquete-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaçamento entre os itens da lista */
+}
+
+.enquete-item {
+    text-decoration: none;
+    color: inherit;
+}
+
+.enquete-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    width: 100%;
+}
+
+.enquete-card:hover {
+    transform: scale(1.02);
+}
+
+.enquete-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.enquete-date {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #b0b0b0;
+}
+
+.enquete-time-left {
+    font-size: 0.9rem;
+    color: #87cefa;
+}
+
+.button {
+    background-color: #1eb0f4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #1a8fbf;
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .enquete-title {
+        font-size: 1.2rem;
+    }
+    .enquete-card {
+        flex-direction: column;
+    }
+
+    .enquete-title {
+        margin-bottom: 10px;
+    }
+
+    .enquete-date,
+    .enquete-time-left {
+        margin-bottom: 5px;
+    }
+}
+
+/* Layout responsivo para telas maiores */
+@media (min-width: 768px) {
+    .enquete-card {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .enquete-title {
+        flex: 3;
+        text-align: left;
+    }
+
+    .enquete-date,
+    .enquete-time-left {
+        flex: 1;
+        text-align: right;
+        margin-left: 20px;
+    }
+
+    .enquete-date {
+        text-align: center;
+    }
+
+    .enquete-time-left {
+        text-align: right;
+    }
+}
+
+/* Para telas muito grandes (esticar de uma ponta à outra) */
+@media (min-width: 1200px) {
+    .enquete-card {
+        padding: 30px; /* Aumentar o padding para preencher melhor */
+    }
+
+    .enquete-title {
+        font-size: 2rem; /* Aumentar tamanho do título */
+    }
+
+    .enquete-date,
+    .enquete-time-left {
+        font-size: 1.2rem;
+    }
+}

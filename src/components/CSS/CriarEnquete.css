@@ -1,0 +1,49 @@
+form {
+    background-color: #150826; /* roxo mais escuro */
+    color: #f0e5ff; /* texto claro que combina com o fundo */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 50px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e5dbff; /* roxo claro */
+}
+
+input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #251034; /* borda roxo escuro */
+    border-radius: 5px;
+    background-color: #1c0c31; /* fundo do input em roxo escuro */
+    color: #fff;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #2f1550; /* roxo escuro */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6d3294; /* roxo um pouco mais claro no hover */
+}
+
+button[type="button"] {
+    margin-bottom: 15px;
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+}

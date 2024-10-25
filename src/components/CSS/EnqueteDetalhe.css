@@ -1,0 +1,60 @@
+.container {
+  background-color: #150826; /* roxo mais escuro */
+  color: #f0e5ff; /* texto claro */
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px; /* Largura máxima para o "formulário" */
+  margin: 50px auto; /* Centraliza horizontalmente */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center; /* Centraliza o título */
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center; /* Centraliza o subtítulo */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex; /* Utilizando flexbox para alinhamento */
+  justify-content: space-between; /* Distribui o conteúdo entre os lados */
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #1e1e1e; /* Fundo escuro para opções */
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-between; /* Espaço entre os botões */
+}
+
+button {
+  background-color: #2f1550; /* roxo escuro para botões */
+  color: #fff; /* texto claro para botões */
+  border: none; /* remove borda padrão */
+  border-radius: 5px; /* bordas arredondadas */
+  cursor: pointer; /* ponteiro de mão ao passar o mouse */
+  padding: 10px; /* espaçamento interno */
+}
+
+button:hover {
+  background-color: #6d3294; /* roxo um pouco mais claro no hover */
+}
+
+.votacao-encerrada {
+  font-weight: bold;
+  color: red; /* vermelho para votação encerrada */
+  margin-left: 10px; /* espaço à esquerda */
+}

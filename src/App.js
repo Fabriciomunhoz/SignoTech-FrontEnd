@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import EnqueteList from './components/EnqueteList';
+import EnqueteDetalhe from './components/EnqueteDetalhe';
+import CriarEnquete from './components/CriarEnquete';
+import EditarEnquete from './components/EditarEnquete';
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+const App = () => {
+    return (
+        <Router>
+            <div>
+                <Routes>
+                    <Route path="/" element={<EnqueteList />} />
+                    <Route path="/enquetes/:id" element={<EnqueteDetalhe />} />
+                    <Route path="/criar-enquete" element={<CriarEnquete />} />
+                    <Route path="/enquetes/:id/editar" element={<EditarEnquete />} />
+                </Routes>
+            </div>
+        </Router>
+    );
+};
 export default App;
